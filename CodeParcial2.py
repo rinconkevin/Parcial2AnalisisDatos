@@ -183,7 +183,9 @@ def show_selection():
         ComboRE11["values"] = Opciones
         ComboRE12["values"] = Opciones
         
-def Tabla1(Entrada, Salida, datos):
+def Tabla1(Entrada, Salida, datos, Forma):          
+    X2=datos[Entrada]
+        
     lista = []
     for i in range(10):
         print("Prueba N°", (i+1) )
@@ -204,12 +206,14 @@ def Tabla1(Entrada, Salida, datos):
     mean = statistics.mean(lista)
     label.configure(text=mean)
     
-def Tabla2(Entrada1,Entrada2 , Salida, datos):
+def Tabla2(Entrada1,Entrada2 , Salida, datos, Forma):
+        
+    X2=datos[[Entrada1, Entrada2]]    
     lista = []
     for i in range(10):
         print("Prueba N°", (i+1) )
         modelo = LinearRegression()
-        X2=datos[[Entrada1, Entrada2]]
+        
         Y=datos[Salida]
 
         X2_train, X2_test, y2_train, y2_test = train_test_split(
@@ -226,12 +230,15 @@ def Tabla2(Entrada1,Entrada2 , Salida, datos):
     mean = statistics.mean(lista)
     label.configure(text=mean)
     
-def Tabla3(Entrada1,Entrada2,Entrada3, Salida, datos):
+def Tabla3(Entrada1,Entrada2,Entrada3, Salida, datos, Forma):
+    X2=datos[[Entrada1, Entrada2,Entrada3]]
+
+
     lista = []
     for i in range(10):
         print("Prueba N°", (i+1) )
         modelo = LinearRegression()
-        X2=datos[[Entrada1, Entrada2,Entrada3]]
+        
         Y=datos[Salida]
 
         X2_train, X2_test, y2_train, y2_test = train_test_split(
@@ -247,12 +254,14 @@ def Tabla3(Entrada1,Entrada2,Entrada3, Salida, datos):
     mean = statistics.mean(lista)
     label.configure(text=mean)
      
-def Tabla4(Entrada1,Entrada2,Entrada3,Entrada4, Salida, datos):
+def Tabla4(Entrada1,Entrada2,Entrada3,Entrada4, Salida, datos, Forma):
+    X2=datos[[Entrada1, Entrada2,Entrada3,Entrada4]]
+
     lista = []
     for i in range(10):
         print("Prueba N°", (i+1) )
         modelo = LinearRegression()
-        X2=datos[[Entrada1, Entrada2,Entrada3,Entrada4]]
+        
         Y=datos[Salida]
 
         X2_train, X2_test, y2_train, y2_test = train_test_split(
@@ -268,12 +277,14 @@ def Tabla4(Entrada1,Entrada2,Entrada3,Entrada4, Salida, datos):
     mean = statistics.mean(lista)
     label.configure(text=mean)
     
-def Tabla5(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5, Salida, datos):
+def Tabla5(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5, Salida, datos, Forma):
+    X2=datos[[Entrada1,Entrada2,Entrada3,Entrada4,Entrada5]]
+
     lista = []
     for i in range(10):
         print("Prueba N°", (i+1) )
         modelo = LinearRegression()
-        X2=datos[[Entrada1,Entrada2,Entrada3,Entrada4,Entrada5]]
+        
         Y=datos[Salida]
 
         X2_train, X2_test, y2_train, y2_test = train_test_split(
@@ -289,12 +300,14 @@ def Tabla5(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5, Salida, datos):
     mean = statistics.mean(lista)
     label.configure(text=mean)
     
-def Tabla6(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6, Salida, datos):
+def Tabla6(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6, Salida, datos, Forma):
+    X2=datos[[Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6]]
+
     lista = []
     for i in range(10):
         print("Prueba N°", (i+1) )
         modelo = LinearRegression()
-        X2=datos[[Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6]]
+        
         Y=datos[Salida]
 
         X2_train, X2_test, y2_train, y2_test = train_test_split(
@@ -310,12 +323,14 @@ def Tabla6(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6, Salida, datos)
     mean = statistics.mean(lista)
     label.configure(text=mean)
     
-def Tabla7(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7, Salida, datos):
+def Tabla7(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7, Salida, datos, Forma):
+    X2=datos[[Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7]]
+
     lista = []
     for i in range(10):
         print("Prueba N°", (i+1) )
         modelo = LinearRegression()
-        X2=datos[[Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7]]
+        
         Y=datos[Salida]
 
         X2_train, X2_test, y2_train, y2_test = train_test_split(
@@ -331,12 +346,13 @@ def Tabla7(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7, Salid
     mean = statistics.mean(lista)
     label.configure(text=mean)
     
-def Tabla8(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8, Salida, datos):
+def Tabla8(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8, Salida, datos, Forma):
+    X2=datos[[Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8]]
     lista = []
     for i in range(10):
         print("Prueba N°", (i+1) )
         modelo = LinearRegression()
-        X2=datos[[Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8]]
+        
         Y=datos[Salida]
 
         X2_train, X2_test, y2_train, y2_test = train_test_split(
@@ -352,12 +368,13 @@ def Tabla8(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrad
     mean = statistics.mean(lista)
     label.configure(text=mean)
     
-def Tabla9(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8,Entrada9, Salida, datos):
+def Tabla9(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8,Entrada9, Salida, datos, Forma):
+    X2=datos[[Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8,Entrada9]]
     lista = []
     for i in range(10):
         print("Prueba N°", (i+1) )
         modelo = LinearRegression()
-        X2=datos[[Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8,Entrada9]]
+        
         Y=datos[Salida]
 
         X2_train, X2_test, y2_train, y2_test = train_test_split(
@@ -373,12 +390,13 @@ def Tabla9(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrad
     mean = statistics.mean(lista)
     label.configure(text=mean)
     
-def Tabla10(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8,Entrada9,Entrada10, Salida, datos):
+def Tabla10(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8,Entrada9,Entrada10, Salida, datos, Forma):
+    X2=datos[[Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8,Entrada9,Entrada10]]
     lista = []
     for i in range(10):
         print("Prueba N°", (i+1) )
         modelo = LinearRegression()
-        X2=datos[[Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8,Entrada9,Entrada10]]
+        
         Y=datos[Salida]
 
         X2_train, X2_test, y2_train, y2_test = train_test_split(
@@ -394,12 +412,13 @@ def Tabla10(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entra
     mean = statistics.mean(lista)
     label.configure(text=mean)
     
-def Tabla11(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8,Entrada9,Entrada10,Entrada11, Salida, datos):
+def Tabla11(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8,Entrada9,Entrada10,Entrada11, Salida, datos, Forma):
+    X2=datos[[Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8,Entrada9,Entrada10,Entrada11]]
     lista = []
     for i in range(10):
         print("Prueba N°", (i+1) )
         modelo = LinearRegression()
-        X2=datos[[Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8,Entrada9,Entrada10,Entrada11]]
+        
         Y=datos[Salida]
 
         X2_train, X2_test, y2_train, y2_test = train_test_split(
@@ -415,12 +434,13 @@ def Tabla11(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entra
     mean = statistics.mean(lista)
     label.configure(text=mean)
     
-def Tabla12(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8,Entrada9,Entrada10,Entrada11,Entrada12, Salida, datos):
+def Tabla12(Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8,Entrada9,Entrada10,Entrada11,Entrada12, Salida, datos, Forma):
+    X2=datos[[Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8,Entrada9,Entrada10,Entrada11,Entrada12]]
     lista = []
     for i in range(10):
         print("Prueba N°", (i+1) )
         modelo = LinearRegression()
-        X2=datos[[Entrada1,Entrada2,Entrada3,Entrada4,Entrada5,Entrada6,Entrada7,Entrada8,Entrada9,Entrada10,Entrada11,Entrada12]]
+        
         Y=datos[Salida]
 
         X2_train, X2_test, y2_train, y2_test = train_test_split(
@@ -455,67 +475,68 @@ def Regrasion():
     re12 = ComboRE12.get()
     ATP = ComboAtipico.get() 
     Salida = ComboSalida.get()
+    Forma = ComboForma.get()
     
     if(k == "1"):
         if(ATP == "Si"):
-            Tabla1(re1, Salida, datos)
+            Tabla1(re1, Salida, datos, Forma)
         else:
-            Tabla1(re1, Salida, datos2)
+            Tabla1(re1, Salida, datos2, Forma)
     elif(k == "2"):
         if(ATP == "Si"):
-            Tabla2(re1,re2, Salida, datos)
+            Tabla2(re1,re2, Salida, datos, Forma)
         else:
-            Tabla2(re1,re2, Salida, datos2)
+            Tabla2(re1,re2, Salida, datos2, Forma)
     elif(k == "3"):
         if(ATP == "Si"):
-            Tabla3(re1,re2,re3, Salida, datos)
+            Tabla3(re1,re2,re3, Salida, datos, Forma)
         else:
-            Tabla3(re1,re2,re3, Salida, datos2)
+            Tabla3(re1,re2,re3, Salida, datos2, Forma)
     elif(k == "4"):
         if(ATP == "Si"):
-            Tabla4(re1,re2,re3,re4, Salida, datos)
+            Tabla4(re1,re2,re3,re4, Salida, datos, Forma)
         else:
-            Tabla4(re1,re2,re3,re4, Salida, datos2)
+            Tabla4(re1,re2,re3,re4, Salida, datos2, Forma)
     elif(k == "5"):
         if(ATP == "Si"):
-            Tabla5(re1,re2,re3,re4,re5, Salida, datos)
+            Tabla5(re1,re2,re3,re4,re5, Salida, datos, Forma)
         else:
-            Tabla5(re1,re2,re3,re4,re5, Salida, datos2)
+            Tabla5(re1,re2,re3,re4,re5, Salida, datos2, Forma)
     elif(k == "6"):
         if(ATP == "Si"):
-            Tabla6(re1,re2,re3,re4,re5,re6, Salida, datos)
+            Tabla6(re1,re2,re3,re4,re5,re6, Salida, datos, Forma)
         else:
-            Tabla6(re1,re2,re3,re4,re5,re6, Salida, datos2)
+            Tabla6(re1,re2,re3,re4,re5,re6, Salida, datos2, Forma)
     elif(k == "7"):
         if(ATP == "Si"):
-            Tabla7(re1,re2,re3,re4,re5,re6,re7, Salida, datos)
+            Tabla7(re1,re2,re3,re4,re5,re6,re7, Salida, datos, Forma)
         else:
-            Tabla7(re1,re2,re3,re4,re5,re6,re7, Salida, datos2)
+            Tabla7(re1,re2,re3,re4,re5,re6,re7, Salida, datos2, Forma)
     elif(k == "8"):
         if(ATP == "Si"):
-            Tabla8(re1,re2,re3,re4,re5,re6,re7,re8, Salida, datos)
+            Tabla8(re1,re2,re3,re4,re5,re6,re7,re8, Salida, datos, Forma)
         else:
-            Tabla8(re1,re2,re3,re4,re5,re6,re7,re8, Salida, datos2)
+            Tabla8(re1,re2,re3,re4,re5,re6,re7,re8, Salida, datos2, Forma)
     elif(k == "9"):
         if(ATP == "Si"):
-            Tabla9(re1,re2,re3,re4,re5,re6,re7,re8,re9, Salida, datos)
+            Tabla9(re1,re2,re3,re4,re5,re6,re7,re8,re9, Salida, datos, Forma)
         else:
-            Tabla9(re1,re2,re3,re4,re5,re6,re7,re8,re9, Salida, datos2)
+            Tabla9(re1,re2,re3,re4,re5,re6,re7,re8,re9, Salida, datos2, Forma)
     elif(k == "10"):
         if(ATP == "Si"):
-            Tabla10(re1,re2,re3,re4,re5,re6,re7,re8,re9,re10, Salida, datos)
+            Tabla10(re1,re2,re3,re4,re5,re6,re7,re8,re9,re10, Salida, datos, Forma)
         else:
-            Tabla10(re1,re2,re3,re4,re5,re6,re7,re8,re9,re10, Salida, datos2)
+            Tabla10(re1,re2,re3,re4,re5,re6,re7,re8,re9,re10, Salida, datos2, Forma)
     elif(k == "11"):
         if(ATP == "Si"):
-            Tabla11(re1,re2,re3,re4,re5,re6,re7,re8,re9,re10,re11, Salida, datos)
+            Tabla11(re1,re2,re3,re4,re5,re6,re7,re8,re9,re10,re11, Salida, datos, Forma)
         else:
-            Tabla11(re1,re2,re3,re4,re5,re6,re7,re8,re9,re10,re11, Salida, datos2)
+            Tabla11(re1,re2,re3,re4,re5,re6,re7,re8,re9,re10,re11, Salida, datos2, Forma)
     elif(k == "12"):
         if(ATP == "Si"):
-            Tabla12(re1,re2,re3,re4,re5,re6,re7,re8,re9,re10,re11,re12, Salida, datos)
+            Tabla12(re1,re2,re3,re4,re5,re6,re7,re8,re9,re10,re11,re12, Salida, datos, Forma)
         else:
-            Tabla12(re1,re2,re3,re4,re5,re6,re7,re8,re9,re10,re11,re12, Salida, datos2)
+            Tabla12(re1,re2,re3,re4,re5,re6,re7,re8,re9,re10,re11,re12, Salida, datos2, Forma)
 #----------------------------------------- Vista --------------------------#
 
 
